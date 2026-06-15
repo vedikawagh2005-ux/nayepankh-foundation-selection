@@ -1,0 +1,293 @@
+:root {
+  --dark-brown: #3E2C23;
+  --cream: #F5EFE6;
+  --white: #FFFFFF;
+  --dark-text: #2B2118;
+  --accent-gold: #D9A05B;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cream);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--dark-brown);
+    padding-bottom: 17px;
+}
+#heading{
+    padding-top:14px;
+    width:1000px;
+    text-align:center;
+    color:white;
+
+}
+header img{
+    height:125px;
+    width:125px;
+    padding:10px;
+    border-radius: 30px;
+}
+ #heading h1{
+    font-size:58px;
+}
+#heading h2{
+    font-size:30px;
+    font-weight:bold;
+}
+header nav{
+    padding-top: 9px;
+    padding-right:15px;
+    margin-right: 6px;;
+}
+header nav ul{
+    display:flex;
+   flex-direction: column;
+   gap:13px;
+   font-size:23px;
+   font-weight:bold;
+}
+header nav ul li a{
+    text-decoration-line: none;
+    color:white;
+    
+}
+
+#hero{
+    padding-top:27px;
+    text-align:center;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-01-31-at-9.40.45-pm-dWxpDb2pNbCaxERZ.jpeg');
+    background-position: center;
+    background-size: cover;
+    height:800px;
+    color:var(--accent-gold);
+    font-weight:bold;
+}
+
+#hero p{
+    padding-top:14px;
+    padding-bottom:14px;
+    font-size:43px;
+    color:var(--cream);
+}
+#hero button{
+    background-color: #e8c39a;
+    color:var(--dark-brown);
+    font-size:25px;
+    border-radius:13px;
+    padding:15px;
+    font-weight:600;
+}
+#hero h1{
+    font-size:58px;
+}
+#hero button:hover{
+    background-color: var(--dark-brown);
+    color:var(--accent-gold);
+}
+#about img{
+    max-width: 100%;
+    height: auto;
+    margin:12px;
+    border-radius: 12px;
+    max-height: 300px;
+}
+#about{
+    display:flex;
+    background-color: var(--cream);
+    justify-content: space-between;
+}
+#about h2{
+    font-size:43px;
+    padding-left: 12px;
+}
+#about p{
+    font-size: 22px;
+    margin:12px;
+}
+#badges{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.badge{
+    font-size:22px;
+    font-weight: 575;
+    background-color:var(--dark-brown);
+    color:var(--accent-gold);
+    padding:18px;
+    border-radius: 19px;
+    margin:10px;
+}
+#container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#what-we-do button{
+    margin:20px auto;
+    display: block;
+    padding:12px;
+    font-size:18px;
+    font-weight:580;
+    background-color:var(--dark-brown) ;
+    color:var(--white);
+    border-radius: 17px;
+    
+}
+#what-we-do{
+    background-color: var(--cream);
+}
+#what-we-do h2{
+    font-size: 43px;
+    padding-left:12px;
+    margin-bottom: 12px;
+}
+.item h3{
+    font-size:27px;
+    font-weight: 650;
+    color: var(--dark-text);
+    text-decoration: underline;
+}
+.item{
+    background-color: var(--accent-gold);
+    width:22%;
+    border:2px var(--dark-text) dotted;
+    padding:10px;
+}
+.item p{
+    font-size:19px;
+}
+#quote{
+    background-color: var(--cream);
+    border:2px solid maroon;
+    margin:25px 25px;
+}
+
+blockquote{
+    text-align: center;
+    font-size:30px;
+    font-weight:650;
+    font-style: italic;
+    padding:12px;
+
+}
+#quote h3{
+    text-align: center;
+    font-size:26px;
+    padding:4px;
+}
+#outer{
+    display:flex;
+    justify-content: space-around;
+}
+#box h2 {
+    font-size:30px;
+}
+#box h3{
+    font-size: 23px;
+}
+
+#in a{
+    display: inline-block;
+    color:maroon;
+    font-size: 23px;
+   font-weight: 550;
+   margin:3px;
+}
+#contact nav{
+    background-color: #2B2118;
+    margin: 10px 0;
+}
+#contact nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+#contact nav ul li a{
+    color:var(--white);
+    font-size:27px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#end{
+    margin:10px;
+}
+
+@media(max-width:600px){
+    #heading h1{
+        font-size:25px;
+    }
+    #heading h2{
+        font-size:22px;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+    header img{
+        height:90px;
+        width:90px;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        font-size:20px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        
+        
+    }
+    header{
+        flex-wrap: wrap;
+    }
+
+    #hero h1{
+        font-size: 22px;
+    }
+    #hero{
+        height: 400px;
+    }
+    #hero p{
+        font-size:25px;
+    }
+    #hero button{
+        font-size:20px;
+        padding:7px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .badge{
+        font-size:25px;
+        padding:14px;
+        text-align: center;
+    }
+    .item{
+        width:45%;
+    }
+    #container{
+        gap:17px;
+        padding:10px;
+    }
+    #quote{
+        margin:25px;
+    }
+    blockquote{
+        font-size:27px;
+    }
+    #quote h3{
+        font-size:24px;
+    }
+    #in a{
+        display: block;
+        margin:7px;
+    }
+    #outer{
+        margin:15px;
+    }
+}
